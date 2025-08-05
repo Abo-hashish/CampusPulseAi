@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class EventService implements IEventService {
+public class EventServiceImpl implements IEventService {
     @Override
     public CreateEventResponse createEvent(CreateEventRequest createEventRequest) {
         return null;

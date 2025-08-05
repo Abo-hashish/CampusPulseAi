@@ -1,7 +1,7 @@
 -- liquibase formatted sql
 
--- changeset abdelrahman:create-survay_Questions-table
-CREATE TABLE IF NOT EXISTS survay_questions (
+-- changeset abdelrahman:create-survey_Questions-table
+CREATE TABLE IF NOT EXISTS survey_questions (
     id BIGSERIAL PRIMARY KEY,
     question TEXT NOT NULL,
     allow_Mulltiple_Answers BOOLEAN DEFAULT FALSE,

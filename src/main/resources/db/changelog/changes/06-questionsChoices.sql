@@ -7,5 +7,5 @@ CREATE TABLE IF NOT EXISTS questions_choices (
     choice TEXT NOT NULL,
     createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    CONSTRAINT fk_question FOREIGN KEY (questionId) REFERENCES survay_questions(id) ON DELETE CASCADE
+    CONSTRAINT fk_question FOREIGN KEY (questionId) REFERENCES survey_questions(id) ON DELETE CASCADE
     );
