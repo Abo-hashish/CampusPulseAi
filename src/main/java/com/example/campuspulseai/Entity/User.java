@@ -38,9 +38,10 @@ public class User {
     @Column(name = "isActive")
     private Boolean isActive = true;
 
-    @Column(name = "roles", columnDefinition = "varchar(50)[]")
+    @Column(name = "roles")
     @Convert(converter = RoleListConverter.class)
     private Set<Role> roles;
+
 
     @CreationTimestamp
     @Column(name = "created_at")

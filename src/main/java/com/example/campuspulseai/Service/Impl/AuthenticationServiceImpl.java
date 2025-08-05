@@ -1,12 +1,9 @@
-package com.example.campuspulseai.Service;
+package com.example.campuspulseai.Service.Impl;
 
 import com.example.campuspulseai.DTO.Request.AuthenticationRequest;
 import com.example.campuspulseai.DTO.Request.RegisterRequest;
 import com.example.campuspulseai.DTO.Response.AuthenticationResponse;
-import com.example.campuspulseai.Repository.IUserRepository;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import com.example.campuspulseai.Service.IAuthenticationService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
