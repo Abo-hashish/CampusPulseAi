@@ -1,7 +1,7 @@
 -- liquibase formatted sql
 
 -- changeset abdelrahman:create-survey_user_answers-table
-CREATE TABLE IF NOT EXISTS survay_user_answers (
+CREATE TABLE IF NOT EXISTS survey_user_answers (
     id BIGSERIAL PRIMARY KEY,
     userId BIGINT NOT NULL,
     questions_answers JSONB,

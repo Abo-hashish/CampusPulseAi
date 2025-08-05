@@ -1,10 +1,9 @@
 package com.example.campuspulseai.Repository;
 
-import com.example.campuspulseai.Entity.Event;
+import com.example.campuspulseai.Entity.QuestionChoices;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface IEventRepository extends CrudRepository<Event, Long> {
-
+public interface ISurveyRepository extends CrudRepository<QuestionChoices, Long> {
 }
