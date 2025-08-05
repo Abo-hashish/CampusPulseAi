@@ -23,10 +23,10 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "firstname", length = 100)
+    @Column(name = "first_name", length = 100)
     private String firstname;
 
-    @Column(name = "lastname", length = 100)
+    @Column(name = "last_name", length = 100)
     private String lastname;
 
     @Column(nullable = false, unique = true, length = 100)
@@ -43,11 +43,11 @@ public class User {
     private Set<Role> roles;
 
     @CreationTimestamp
-    @Column(name = "createdAt")
+    @Column(name = "created_at")
     private Timestamp createdAt;
 
     @UpdateTimestamp
-    @Column(name = "updatedAt")
+    @Column(name = "updated_at")
     private Timestamp updatedAt;
 }
 

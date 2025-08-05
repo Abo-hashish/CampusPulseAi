@@ -1,14 +1,13 @@
+
 package com.example.campuspulseai.Entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
-import java.sql.Time;
 import java.sql.Timestamp;
 
 @Table(name = "event")
@@ -18,41 +17,42 @@ import java.sql.Timestamp;
 @NoArgsConstructor
 public class Event {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(nullable = false)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "clubId", nullable = false)
     private Club club;
 
-
-    @Column(nullable = false)
+    @Column(nullable = false, length = 255)
     private String title;
 
-    @Column(nullable = false)
+    @Column(nullable = false, columnDefinition = "TEXT")
     private String description;
 
-    @Column(nullable = false)
-    private Timestamp start_date;
+    @Column(name = "start_date", nullable = false)
+    private Timestamp startDate;
 
-    @Column(nullable = false)
+    @Column(nullable = false, length = 255)
     private String location;
 
     @Column(nullable = false)
     private int capacity;
 
-    @Column
+    @Column(nullable = false, length = 50)
+    private String category;
+
+    @Column(columnDefinition = "TEXT")
     private String imageUrl;
 
-    @Column(nullable = false)
-    private boolean isActive;
+    @Column(name = "isActive", nullable = false)
+    private boolean isActive = true;
 
-    @Column(nullable = false)
     @CreationTimestamp
+    @Column(nullable = false)
     private Timestamp createdAt;
 
-    @Column(nullable = false)
     @UpdateTimestamp
+    @Column(nullable = false)
     private Timestamp updatedAt;
 }

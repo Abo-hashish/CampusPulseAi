@@ -23,16 +23,16 @@ public class Club {
     @JoinColumn(name = "ownerId", nullable = false)
     private User owner;
 
-    @Column(nullable = false)
+    @Column(nullable = false, length = 255)
     private String name;
 
-    @Column
+    @Column(nullable = false, columnDefinition = "TEXT")
     private String description;
 
-    @Column
+    @Column(columnDefinition = "TEXT")
     private String logoUrl;
 
-    @Column(nullable = false)
+    @Column(name = "isActive", nullable = false)
     private boolean isActive = true;
 
     @CreationTimestamp
