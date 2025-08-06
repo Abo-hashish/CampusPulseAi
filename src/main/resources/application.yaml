@@ -2,6 +2,10 @@ spring:
   application:
     name: CampusPulseAi
 
+  jwt:
+    secret: your_base64_encoded_secret_key
+    expiration: 86400000 # 1 day in ms
+
   datasource:
     url: jdbc:postgresql://localhost:3307/campus_pulse
     username: postgres
@@ -24,3 +28,5 @@ spring:
 springdoc:
   swagger-ui:
     path: /docs
+
+
