@@ -1,9 +1,8 @@
 package com.example.campuspulseai.Service;
 
-import com.example.campuspulseai.DTO.Request.CreateClubRequest;
-import com.example.campuspulseai.DTO.Response.CreateClubResponse;
-import com.example.campuspulseai.DTO.Response.GetClubResponse;
-import com.example.campuspulseai.DTO.Response.GetEventResponse;
+import com.example.campuspulseai.domain.DTO.Request.CreateClubRequest;
+import com.example.campuspulseai.domain.DTO.Response.CreateClubResponse;
+import com.example.campuspulseai.domain.DTO.Response.GetClubResponse;
 
 import java.util.List;
 

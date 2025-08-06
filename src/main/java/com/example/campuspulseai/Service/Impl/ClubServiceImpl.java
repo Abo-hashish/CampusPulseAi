@@ -1,9 +1,9 @@
 package com.example.campuspulseai.Service.Impl;
 
-import com.example.campuspulseai.DTO.Request.CreateClubRequest;
-import com.example.campuspulseai.DTO.Response.CreateClubResponse;
-import com.example.campuspulseai.DTO.Response.GetClubResponse;
 import com.example.campuspulseai.Service.IClubService;
+import com.example.campuspulseai.domain.DTO.Request.CreateClubRequest;
+import com.example.campuspulseai.domain.DTO.Response.CreateClubResponse;
+import com.example.campuspulseai.domain.DTO.Response.GetClubResponse;
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

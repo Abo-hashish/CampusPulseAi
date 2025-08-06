@@ -1,9 +1,9 @@
 package com.example.campuspulseai.Service.Impl;
 
-import com.example.campuspulseai.DTO.Request.CreateEventRequest;
-import com.example.campuspulseai.DTO.Response.CreateEventResponse;
-import com.example.campuspulseai.DTO.Response.GetEventResponse;
 import com.example.campuspulseai.Service.IEventService;
+import com.example.campuspulseai.domain.DTO.Request.CreateEventRequest;
+import com.example.campuspulseai.domain.DTO.Response.CreateEventResponse;
+import com.example.campuspulseai.domain.DTO.Response.GetEventResponse;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
